@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <div class="header-left">
+                <h1>QuizMaster</h1>
+                <p>Test your skills in minutes</p>
+            </div>
+
+        </header>
+
+        <main id="quiz-view" class="active-view">
+            <div class="status-bar">
+                <div class="progress-info">
+                    <span id="question-count">1 / 12</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+
+            </div>
+
+            <div class="question-card">
+
+                <h2 id="question-text">Question text goes here?</h2>
+                <div id="options-grid" class="options-grid">
+                </div>
+            </div>
+
+            <footer class="quiz-footer">
+                <button id="btn-skip" class="btn btn-secondary">Skip</button>
+                <button id="btn-next" class="btn btn-primary" disabled>Next</button>
+            </footer>
+        </main>
+
+        <main id="results-view" class="hidden-view">
+            <div class="results-card">
+                <div class="score-circle">
+                    <span id="final-score">0</span>
+                    <span class="score-label">Correct</span>
+                </div>
+                <h2 id="final-percent">0%</h2>
+                <p id="feedback-message">Well done!</p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span id="stat-correct" class="stat-val">0</span>
+                        <span class="stat-label">Correct</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="stat-wrong" class="stat-val">0</span>
+                        <span class="stat-label">Wrong</span>
+                    </div>
+                    <div class="stat-item">
+                        <span id="stat-skipped" class="stat-val">0</span>
+                        <span class="stat-label">Skipped</span>
+                    </div>
+
+                </div>
+
+                <div class="review-section">
+                    <h3>Review</h3>
+                    <div id="review-list" class="review-list"></div>
+                </div>
+            </div>
+
+            <footer class="results-footer">
+                <button id="btn-restart" class="btn btn-primary">Restart Quiz</button>
+                <button id="btn-retry" class="btn btn-secondary">Try Same Order</button>
+            </footer>
+        </main>
+    </div>
+
+    <div class="aria-announcer" aria-live="polite" id="aria-announcer"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
