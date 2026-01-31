@@ -4,7 +4,7 @@ A modern, responsive, and accessible quiz application built with vanilla HTML, C
 
 ![QuizMaster App Screenshot](./screenshot.png)
 
-[**🚀 View Live Demo**](https://your-app-url.vercel.app/)
+[**🚀 View Live Demo**](https://js-quiz-app-silk.vercel.app/)
 
 ## Features
 
